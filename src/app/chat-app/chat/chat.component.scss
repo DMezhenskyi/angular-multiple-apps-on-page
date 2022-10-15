@@ -1,0 +1,20 @@
+:host {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1;
+}
+.chat-app-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.new-message-icon {
+  width: 10px;
+  height: 10px;
+  background-color: #e91e63;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}

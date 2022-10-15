@@ -1,0 +1,33 @@
+:host {
+  border: #ccc solid 1px;
+  display: block;
+  width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  height: 450px;
+  background-color: #fff;
+  box-shadow: rgba($color: #000000, $alpha: 0.4) 0 0 7px;
+  margin-bottom: 68px;
+  transform-origin: bottom right;
+  display: flex;
+  flex-direction: column;
+}
+.new-message {
+  width: 100%;
+  mat-form-field {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+.messages {
+  height: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no-message {
+  font-size: 14px;
+  opacity: 0.5;
+}

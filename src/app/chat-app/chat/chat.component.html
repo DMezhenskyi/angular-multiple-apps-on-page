@@ -1,0 +1,6 @@
+
+<app-chat-window [@chat] *ngIf="chatState.isOpen$ | async"></app-chat-window>
+<button (click)="chatState.toggle()" mat-fab color="primary" class="chat-app-button">
+  <mat-icon>chat</mat-icon>
+  <div *ngIf="hasNewMessage$ | async" class="new-message-icon"></div>
+</button>
