@@ -6,6 +6,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,12 +15,13 @@ import { ChatWindowComponent } from './chat-window/chat-window.component';
     ChatWindowComponent
   ],
   imports: [
-    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
   ],
-  exports: [ChatComponent]
+  bootstrap: [ChatComponent]
 })
 export class ChatAppModule { }

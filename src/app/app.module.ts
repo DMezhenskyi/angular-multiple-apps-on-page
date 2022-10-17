@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './home-page/home-page.component';
-import { ChatAppModule } from './chat-app/chat-app.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +12,7 @@ import { ChatAppModule } from './chat-app/chat-app.module';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    ChatAppModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

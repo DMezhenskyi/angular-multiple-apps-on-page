@@ -19,7 +19,10 @@ export class ChatComponent implements OnInit {
 
   hasNewMessage$!: Observable<boolean>;
 
-  constructor(public chatState: ChatStateService) { }
+  constructor(public chatState: ChatStateService) {
+    console.log('Service instance in ChatComponent: ', this.chatState.id)
+    // throw new Error('Failed Bootstraping...');
+  }
 
   ngOnInit(): void {
     this.hasNewMessage$ = this.chatState.newMessages$.pipe(map(value => !!value))
